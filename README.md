@@ -1,6 +1,6 @@
 # Purrmodoro 🐾
 
-A cozy little focus timer for iPhone, starring a brown kitty who studies with you. Made by C for S.
+A cozy little focus timer for iPhone, starring a brown kitty who studies and focuses with you.
 
 <img src="docs/images/demo.gif" width="300" alt="Winding the clock while the kitty watches, then petting her">
 
