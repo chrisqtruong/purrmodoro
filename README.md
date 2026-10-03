@@ -48,6 +48,13 @@ A cozy little focus timer for iPhone, starring a brown kitty who studies with yo
 
 Debug-only launch options for testing: `-fastTimer` (a minute lasts a second), `-seedDemo` (sample history), `-forceDay` (daytime look at any hour).
 
+## Ideas for later
+
+- **Make it yours:** right now the kitty's coat says "Sarah" and the pennant says "HOPKINS" because this started as a gift. If it's ever shared, a "Make it yours" section in Settings would let anyone set the name on the coat and pajamas, their school or team on the pennant, and maybe the kitty's name and fur color.
+- **Ring even on silent** with AlarmKit (see the plan below).
+- **Collectibles:** treats, outfits, room decor, and rare kitties earned through focus time.
+- **Real weather** in the window.
+
 ## Docs
 
 - [Product spec](docs/spec.md): what the app does and why.
