@@ -2,6 +2,8 @@
 
 A cozy little focus timer for iPhone, starring a brown kitty who studies with you. Made by C for S.
 
+<img src="docs/images/demo.gif" width="300" alt="Winding the clock while the kitty watches, then petting her">
+
 <p>
   <img src="docs/images/main.png" width="240" alt="Main screen: the kitty at her desk inside the timer ring">
   <img src="docs/images/notebook.png" width="240" alt="Focus notebook">
