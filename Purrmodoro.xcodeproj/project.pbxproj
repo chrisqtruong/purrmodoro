@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		020E6D446FA51FA2ADBDAA7B /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62991CF7E2B0F77EA6B7495 /* TimerModel.swift */; };
+		05D1306182B7A38206ED0088 /* chime.wav in Resources */ = {isa = PBXBuildFile; fileRef = 73196DB2E6B555A3A659047D /* chime.wav */; };
+		14D50D43027932A446DBE8CB /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5533FB1D19B11DC6E04C32BD /* SplashView.swift */; };
+		1616D2E9C701B42EE412D642 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E6732A014A9860809A69 /* HistoryView.swift */; };
+		1BF8F79708B3D82373E08CC2 /* FocusSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E0FA13067242EFAEBC0A1D /* FocusSession.swift */; };
+		1FB9D7A55A3C2A5D03C3078C /* purr.wav in Resources */ = {isa = PBXBuildFile; fileRef = E46191773886CFBDA0F42FFD /* purr.wav */; };
+		21695638694F9559227F0127 /* TimerIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48324EDC74AF0595D66AEC8 /* TimerIntents.swift */; };
+		3F0FE81945AB180E8E57C69D /* alarm-marimba.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3886C45B378767595F860529 /* alarm-marimba.wav */; };
+		4052E66952EFAC805A6F472A /* PurrmodoroWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5FC034B7F80D0ECE5A93439D /* PurrmodoroWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		480616E172E06083E1C76646 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BDBB25F6A2092E3026FB2E /* ContentView.swift */; };
+		4C26D45B5A2BD6C2F8612A6B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4EF3360601420CA8695308 /* Theme.swift */; };
+		4FA9835CF67B882B7F6BB29F /* alarm-bowl.wav in Resources */ = {isa = PBXBuildFile; fileRef = 801962EB5335982BDA188B83 /* alarm-bowl.wav */; };
+		5BAA2E769836B1EAD46D952E /* alarm-marimba-low.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84B06B7742822F2E2A57A0C7 /* alarm-marimba-low.wav */; };
+		5EC091BF614B344580DA5A7D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC1CBEC3637C82642D7E43D /* SettingsView.swift */; };
+		60A6670EB3E252A06159B867 /* SheetHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29E947D1E6B3834D4379727 /* SheetHeader.swift */; };
+		6289141E1297E12A4DEE3CD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7164CD84FD359E2D23861A2 /* Assets.xcassets */; };
+		6B50F09A0BCBABFA589950D7 /* FocusLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0523982E1C7EE2AC7C5F59FB /* FocusLines.swift */; };
+		72295F74DFD8823AD007F5CE /* SystemServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7622DE5AE76A59CB589D816 /* SystemServices.swift */; };
+		757F08870340954E6626B4B7 /* KittyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4BA2E9DDE720263B8673AC /* KittyView.swift */; };
+		83AD7BC577F03CF0AED63BAF /* SkyClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A723BE1C46796FA876BDB997 /* SkyClock.swift */; };
+		85D9B0C10A4122CCD30D58D1 /* PurrmodoroWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0A3FC530548A6047CE5C5D /* PurrmodoroWidgets.swift */; };
+		86886A9FACD8E2EEE4420658 /* TimerCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE356B3FBAF199B7F463DB9 /* TimerCommandHandler.swift */; };
+		86AA46A34FEB9F818AE25554 /* IconRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1E358745152FD5CECFCE2B /* IconRenderer.swift */; };
+		8C8FD6421CF3E47CBE49F53C /* TimerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B123A12F83B5238C0896D4F /* TimerEngine.swift */; };
+		8E8834AC3EE2D70AF4C89AA4 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62991CF7E2B0F77EA6B7495 /* TimerModel.swift */; };
+		8FE26457DEBF7B3F041BCB1B /* alarm-musicbox.wav in Resources */ = {isa = PBXBuildFile; fileRef = 07DC5CFF9459B8DDE66DBCDB /* alarm-musicbox.wav */; };
+		946E826A0A443C92203C4BD8 /* SkyClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A723BE1C46796FA876BDB997 /* SkyClock.swift */; };
+		95D6F77808B65940F62DAE22 /* boop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9B1FB01C15526BE74B694E7D /* boop.wav */; };
+		972ED839463C5F56F3448D9C /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01BFD1F8D35469975B8CB71 /* Preferences.swift */; };
+		A0B98EE74B54A402CB771D7B /* TimerIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48324EDC74AF0595D66AEC8 /* TimerIntents.swift */; };
+		ABE94C2A7D2E307D3A087FB1 /* alarm-musicbox-low.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6A8856B054A2ADB333A4A45E /* alarm-musicbox-low.wav */; };
+		B0B1C3DB9E0C1EA7D77DAB90 /* tick.wav in Resources */ = {isa = PBXBuildFile; fileRef = CCAAC5B62EC4205C86BA16F4 /* tick.wav */; };
+		C7D99204678447BBB433128F /* chime-low.wav in Resources */ = {isa = PBXBuildFile; fileRef = C2F0CC7FBF292AC13FC353AE /* chime-low.wav */; };
+		D2F4D6D1EDE80E520722BA72 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4EF3360601420CA8695308 /* Theme.swift */; };
+		D81EB538E59B701A31EAA4B0 /* KittyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4BA2E9DDE720263B8673AC /* KittyView.swift */; };
+		E2FE0C57AD098C0B3A0835FC /* PurrmodoroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD73C6C393498CB4CF9C36FD /* PurrmodoroApp.swift */; };
+		E8CA5449842796D4BE63871B /* alarm-bowl-low.wav in Resources */ = {isa = PBXBuildFile; fileRef = 54A5A14EB9B2F5ABC9167963 /* alarm-bowl-low.wav */; };
+		EA13991BDDEC4AA077368E58 /* TimerCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C694EB9150A7C9201DA8A2 /* TimerCommandHandler.swift */; };
+		FE0F740CE4A1123E48D78D40 /* pop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8395A214C44BE8AA5EDD5F70 /* pop.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00BB2C00DE0CF57C46C6D0B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC6B343CFE69B439698D6871 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9174C9F950CF3C361D2AA775;
+			remoteInfo = PurrmodoroWidgets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		23D4F627D8209313DA8C99B8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4052E66952EFAC805A6F472A /* PurrmodoroWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0523982E1C7EE2AC7C5F59FB /* FocusLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusLines.swift; sourceTree = "<group>"; };
+		07DC5CFF9459B8DDE66DBCDB /* alarm-musicbox.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "alarm-musicbox.wav"; sourceTree = "<group>"; };
+		0D0CBCA5C9E7565008393892 /* Purrmodoro.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Purrmodoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A4403A84D0B9CF94CCE20DB /* Purrmodoro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Purrmodoro.entitlements; sourceTree = "<group>"; };
+		1E0A3FC530548A6047CE5C5D /* PurrmodoroWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurrmodoroWidgets.swift; sourceTree = "<group>"; };
+		2A23E6732A014A9860809A69 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		3886C45B378767595F860529 /* alarm-marimba.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "alarm-marimba.wav"; sourceTree = "<group>"; };
+		4B123A12F83B5238C0896D4F /* TimerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerEngine.swift; sourceTree = "<group>"; };
+		4BE356B3FBAF199B7F463DB9 /* TimerCommandHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCommandHandler.swift; sourceTree = "<group>"; };
+		53BDBB25F6A2092E3026FB2E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		54A5A14EB9B2F5ABC9167963 /* alarm-bowl-low.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "alarm-bowl-low.wav"; sourceTree = "<group>"; };
+		5533FB1D19B11DC6E04C32BD /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		5B1E358745152FD5CECFCE2B /* IconRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconRenderer.swift; sourceTree = "<group>"; };
+		5FC034B7F80D0ECE5A93439D /* PurrmodoroWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = PurrmodoroWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A8856B054A2ADB333A4A45E /* alarm-musicbox-low.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "alarm-musicbox-low.wav"; sourceTree = "<group>"; };
+		73196DB2E6B555A3A659047D /* chime.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chime.wav; sourceTree = "<group>"; };
+		801962EB5335982BDA188B83 /* alarm-bowl.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "alarm-bowl.wav"; sourceTree = "<group>"; };
+		8395A214C44BE8AA5EDD5F70 /* pop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pop.wav; sourceTree = "<group>"; };
+		84B06B7742822F2E2A57A0C7 /* alarm-marimba-low.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "alarm-marimba-low.wav"; sourceTree = "<group>"; };
+		8A58A67E54FA93AF758AF12F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9B1FB01C15526BE74B694E7D /* boop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = boop.wav; sourceTree = "<group>"; };
+		A723BE1C46796FA876BDB997 /* SkyClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyClock.swift; sourceTree = "<group>"; };
+		A7622DE5AE76A59CB589D816 /* SystemServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemServices.swift; sourceTree = "<group>"; };
+		AD73C6C393498CB4CF9C36FD /* PurrmodoroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurrmodoroApp.swift; sourceTree = "<group>"; };
+		B01BFD1F8D35469975B8CB71 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		BB38C53FE2D4E05AA6043C87 /* PurrmodoroWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PurrmodoroWidgets.entitlements; sourceTree = "<group>"; };
+		BC4BA2E9DDE720263B8673AC /* KittyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittyView.swift; sourceTree = "<group>"; };
+		C2F0CC7FBF292AC13FC353AE /* chime-low.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "chime-low.wav"; sourceTree = "<group>"; };
+		C3C694EB9150A7C9201DA8A2 /* TimerCommandHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCommandHandler.swift; sourceTree = "<group>"; };
+		C48324EDC74AF0595D66AEC8 /* TimerIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerIntents.swift; sourceTree = "<group>"; };
+		C62991CF7E2B0F77EA6B7495 /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		C7164CD84FD359E2D23861A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCAAC5B62EC4205C86BA16F4 /* tick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tick.wav; sourceTree = "<group>"; };
+		D29E947D1E6B3834D4379727 /* SheetHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetHeader.swift; sourceTree = "<group>"; };
+		DDC1CBEC3637C82642D7E43D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E46191773886CFBDA0F42FFD /* purr.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = purr.wav; sourceTree = "<group>"; };
+		E8E0FA13067242EFAEBC0A1D /* FocusSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSession.swift; sourceTree = "<group>"; };
+		EE4EF3360601420CA8695308 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		FE33153078A2D3FE3D90A44B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		6068718E2885831A09DF9EFC /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				54A5A14EB9B2F5ABC9167963 /* alarm-bowl-low.wav */,
+				801962EB5335982BDA188B83 /* alarm-bowl.wav */,
+				84B06B7742822F2E2A57A0C7 /* alarm-marimba-low.wav */,
+				3886C45B378767595F860529 /* alarm-marimba.wav */,
+				6A8856B054A2ADB333A4A45E /* alarm-musicbox-low.wav */,
+				07DC5CFF9459B8DDE66DBCDB /* alarm-musicbox.wav */,
+				9B1FB01C15526BE74B694E7D /* boop.wav */,
+				C2F0CC7FBF292AC13FC353AE /* chime-low.wav */,
+				73196DB2E6B555A3A659047D /* chime.wav */,
+				8395A214C44BE8AA5EDD5F70 /* pop.wav */,
+				E46191773886CFBDA0F42FFD /* purr.wav */,
+				CCAAC5B62EC4205C86BA16F4 /* tick.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		6CF2D88723C23460F3CFAEB7 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				FE33153078A2D3FE3D90A44B /* Info.plist */,
+				BB38C53FE2D4E05AA6043C87 /* PurrmodoroWidgets.entitlements */,
+				1E0A3FC530548A6047CE5C5D /* PurrmodoroWidgets.swift */,
+				C3C694EB9150A7C9201DA8A2 /* TimerCommandHandler.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		7B3039550931C201FA403FD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D0CBCA5C9E7565008393892 /* Purrmodoro.app */,
+				5FC034B7F80D0ECE5A93439D /* PurrmodoroWidgets.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F75EB844F4C6EA814A8F9D5 = {
+			isa = PBXGroup;
+			children = (
+				E4F51C12145F3B299A612DDC /* App */,
+				D2A168BDD74715697D6DB447 /* Shared */,
+				6CF2D88723C23460F3CFAEB7 /* Widgets */,
+				7B3039550931C201FA403FD0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2A168BDD74715697D6DB447 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BC4BA2E9DDE720263B8673AC /* KittyView.swift */,
+				A723BE1C46796FA876BDB997 /* SkyClock.swift */,
+				EE4EF3360601420CA8695308 /* Theme.swift */,
+				C48324EDC74AF0595D66AEC8 /* TimerIntents.swift */,
+				C62991CF7E2B0F77EA6B7495 /* TimerModel.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		E4F51C12145F3B299A612DDC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C7164CD84FD359E2D23861A2 /* Assets.xcassets */,
+				53BDBB25F6A2092E3026FB2E /* ContentView.swift */,
+				0523982E1C7EE2AC7C5F59FB /* FocusLines.swift */,
+				E8E0FA13067242EFAEBC0A1D /* FocusSession.swift */,
+				2A23E6732A014A9860809A69 /* HistoryView.swift */,
+				5B1E358745152FD5CECFCE2B /* IconRenderer.swift */,
+				8A58A67E54FA93AF758AF12F /* Info.plist */,
+				B01BFD1F8D35469975B8CB71 /* Preferences.swift */,
+				1A4403A84D0B9CF94CCE20DB /* Purrmodoro.entitlements */,
+				AD73C6C393498CB4CF9C36FD /* PurrmodoroApp.swift */,
+				DDC1CBEC3637C82642D7E43D /* SettingsView.swift */,
+				D29E947D1E6B3834D4379727 /* SheetHeader.swift */,
+				5533FB1D19B11DC6E04C32BD /* SplashView.swift */,
+				A7622DE5AE76A59CB589D816 /* SystemServices.swift */,
+				4BE356B3FBAF199B7F463DB9 /* TimerCommandHandler.swift */,
+				4B123A12F83B5238C0896D4F /* TimerEngine.swift */,
+				6068718E2885831A09DF9EFC /* Sounds */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3EEC192F276CF5F29D8B6DB8 /* Purrmodoro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB05EEB5853F914DE645CD28 /* Build configuration list for PBXNativeTarget "Purrmodoro" */;
+			buildPhases = (
+				72372B0B022B65C6E849F60A /* Sources */,
+				FA1DD4E660792DAAC57820D7 /* Resources */,
+				23D4F627D8209313DA8C99B8 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B12999A1BF8C638B1486DD9 /* PBXTargetDependency */,
+			);
+			name = Purrmodoro;
+			packageProductDependencies = (
+			);
+			productName = Purrmodoro;
+			productReference = 0D0CBCA5C9E7565008393892 /* Purrmodoro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9174C9F950CF3C361D2AA775 /* PurrmodoroWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05CB26D029952841375556DF /* Build configuration list for PBXNativeTarget "PurrmodoroWidgets" */;
+			buildPhases = (
+				7E4BFF8BEE8CB4254F6F179E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PurrmodoroWidgets;
+			packageProductDependencies = (
+			);
+			productName = PurrmodoroWidgets;
+			productReference = 5FC034B7F80D0ECE5A93439D /* PurrmodoroWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC6B343CFE69B439698D6871 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3EEC192F276CF5F29D8B6DB8 = {
+						DevelopmentTeam = NW2J8N6BGR;
+						ProvisioningStyle = Automatic;
+					};
+					9174C9F950CF3C361D2AA775 = {
+						DevelopmentTeam = NW2J8N6BGR;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6A34BFFDBDCD83B0184FFF05 /* Build configuration list for PBXProject "Purrmodoro" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 9F75EB844F4C6EA814A8F9D5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7B3039550931C201FA403FD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3EEC192F276CF5F29D8B6DB8 /* Purrmodoro */,
+				9174C9F950CF3C361D2AA775 /* PurrmodoroWidgets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA1DD4E660792DAAC57820D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6289141E1297E12A4DEE3CD4 /* Assets.xcassets in Resources */,
+				E8CA5449842796D4BE63871B /* alarm-bowl-low.wav in Resources */,
+				4FA9835CF67B882B7F6BB29F /* alarm-bowl.wav in Resources */,
+				5BAA2E769836B1EAD46D952E /* alarm-marimba-low.wav in Resources */,
+				3F0FE81945AB180E8E57C69D /* alarm-marimba.wav in Resources */,
+				ABE94C2A7D2E307D3A087FB1 /* alarm-musicbox-low.wav in Resources */,
+				8FE26457DEBF7B3F041BCB1B /* alarm-musicbox.wav in Resources */,
+				95D6F77808B65940F62DAE22 /* boop.wav in Resources */,
+				C7D99204678447BBB433128F /* chime-low.wav in Resources */,
+				05D1306182B7A38206ED0088 /* chime.wav in Resources */,
+				FE0F740CE4A1123E48D78D40 /* pop.wav in Resources */,
+				1FB9D7A55A3C2A5D03C3078C /* purr.wav in Resources */,
+				B0B1C3DB9E0C1EA7D77DAB90 /* tick.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72372B0B022B65C6E849F60A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				480616E172E06083E1C76646 /* ContentView.swift in Sources */,
+				6B50F09A0BCBABFA589950D7 /* FocusLines.swift in Sources */,
+				1BF8F79708B3D82373E08CC2 /* FocusSession.swift in Sources */,
+				1616D2E9C701B42EE412D642 /* HistoryView.swift in Sources */,
+				86AA46A34FEB9F818AE25554 /* IconRenderer.swift in Sources */,
+				D81EB538E59B701A31EAA4B0 /* KittyView.swift in Sources */,
+				972ED839463C5F56F3448D9C /* Preferences.swift in Sources */,
+				E2FE0C57AD098C0B3A0835FC /* PurrmodoroApp.swift in Sources */,
+				5EC091BF614B344580DA5A7D /* SettingsView.swift in Sources */,
+				60A6670EB3E252A06159B867 /* SheetHeader.swift in Sources */,
+				83AD7BC577F03CF0AED63BAF /* SkyClock.swift in Sources */,
+				14D50D43027932A446DBE8CB /* SplashView.swift in Sources */,
+				72295F74DFD8823AD007F5CE /* SystemServices.swift in Sources */,
+				D2F4D6D1EDE80E520722BA72 /* Theme.swift in Sources */,
+				86886A9FACD8E2EEE4420658 /* TimerCommandHandler.swift in Sources */,
+				8C8FD6421CF3E47CBE49F53C /* TimerEngine.swift in Sources */,
+				21695638694F9559227F0127 /* TimerIntents.swift in Sources */,
+				020E6D446FA51FA2ADBDAA7B /* TimerModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E4BFF8BEE8CB4254F6F179E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				757F08870340954E6626B4B7 /* KittyView.swift in Sources */,
+				85D9B0C10A4122CCD30D58D1 /* PurrmodoroWidgets.swift in Sources */,
+				946E826A0A443C92203C4BD8 /* SkyClock.swift in Sources */,
+				4C26D45B5A2BD6C2F8612A6B /* Theme.swift in Sources */,
+				EA13991BDDEC4AA077368E58 /* TimerCommandHandler.swift in Sources */,
+				A0B98EE74B54A402CB771D7B /* TimerIntents.swift in Sources */,
+				8E8834AC3EE2D70AF4C89AA4 /* TimerModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B12999A1BF8C638B1486DD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9174C9F950CF3C361D2AA775 /* PurrmodoroWidgets */;
+			targetProxy = 00BB2C00DE0CF57C46C6D0B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		608A710B81723AD6FFF1B6E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/Purrmodoro.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.christruong.purrmodoro;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7016A2FD186D0B23A8BEB653 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = NW2J8N6BGR;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		AA8B048216F6C475A27C6864 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = NW2J8N6BGR;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CDFF33977980AF453D137875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widgets/PurrmodoroWidgets.entitlements;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.christruong.purrmodoro.widgets;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E6D5513E341A6FACD05AA2F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widgets/PurrmodoroWidgets.entitlements;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.christruong.purrmodoro.widgets;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F5AE0498BDB2F6A494ADCBB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/Purrmodoro.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.christruong.purrmodoro;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05CB26D029952841375556DF /* Build configuration list for PBXNativeTarget "PurrmodoroWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDFF33977980AF453D137875 /* Debug */,
+				E6D5513E341A6FACD05AA2F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6A34BFFDBDCD83B0184FFF05 /* Build configuration list for PBXProject "Purrmodoro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA8B048216F6C475A27C6864 /* Debug */,
+				7016A2FD186D0B23A8BEB653 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BB05EEB5853F914DE645CD28 /* Build configuration list for PBXNativeTarget "Purrmodoro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				608A710B81723AD6FFF1B6E8 /* Debug */,
+				F5AE0498BDB2F6A494ADCBB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC6B343CFE69B439698D6871 /* Project object */;
+}

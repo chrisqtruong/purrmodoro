@@ -1,0 +1,67 @@
+name: Purrmodoro
+options:
+  bundleIdPrefix: com.christruong
+  deploymentTarget:
+    iOS: "18.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: NW2J8N6BGR
+    TARGETED_DEVICE_FAMILY: "1"
+targets:
+  Purrmodoro:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+      - path: Shared
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: Purrmodoro
+        UILaunchScreen:
+          UIColorName: LaunchBackground
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        NSSupportsLiveActivities: true
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+    entitlements:
+      path: App/Purrmodoro.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.christruong.purrmodoro
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.christruong.purrmodoro
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    dependencies:
+      - target: PurrmodoroWidgets
+    scheme:
+      # Testing shortcuts (debug builds only). Toggle in Product > Scheme > Edit Scheme > Run > Arguments.
+      commandLineArguments:
+        "-fastTimer": false
+        "-seedDemo": false
+  PurrmodoroWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: Widgets
+      - path: Shared
+    info:
+      path: Widgets/Info.plist
+      properties:
+        CFBundleDisplayName: Purrmodoro
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    entitlements:
+      path: Widgets/PurrmodoroWidgets.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.christruong.purrmodoro
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.christruong.purrmodoro.widgets
