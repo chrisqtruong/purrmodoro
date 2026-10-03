@@ -40,18 +40,27 @@ enum DemoData {
         else { return }
         let cal = Calendar.current
         let today = cal.startOfDay(for: .now)
-        for offset in 1..<112 {
+        // Sessions start in the morning, afternoon, or evening, mostly mornings.
+        let blocks: [Double] = [8.5, 9, 9.5, 10, 13.5, 14, 15, 19, 20.5]
+        for offset in 0..<112 {
             guard let day = cal.date(byAdding: .day, value: -offset, to: today) else { continue }
             let weekend = cal.isDateInWeekend(day)
-            guard Int.random(in: 0..<10) < (weekend ? 3 : 8) else { continue }
-            for i in 0..<Int.random(in: 1...(weekend ? 3 : 7)) {
-                let start = day.addingTimeInterval(9 * 3600 + Double(i) * 35 * 60)
+            guard offset < 3 || Int.random(in: 0..<10) < (weekend ? 3 : 8) else { continue }
+            var clock = blocks.randomElement()!
+            for _ in 0..<Int.random(in: 1...(weekend ? 3 : 6)) {
+                let start = day.addingTimeInterval(clock * 3600)
+                guard start < .now else { break }
                 let full = Int.random(in: 0..<5) > 0
-                context.insert(FocusSession(start: start,
-                                            seconds: full ? [25, 25, 45][Int.random(in: 0..<3)] * 60 : Int.random(in: 5...20) * 60,
-                                            deep: full && Bool.random(),
-                                            completed: full))
+                let minutes = full ? [25, 25, 45][Int.random(in: 0..<3)] : Int.random(in: 5...20)
+                context.insert(FocusSession(start: start, seconds: minutes * 60,
+                                            deep: full && Bool.random(), completed: full))
+                clock += Double(minutes + 10) / 60
             }
+        }
+        let notes = [(1, "Finished my case report"), (4, "Long clinic day, squeezed in two sessions"),
+                     (8, "Board review: cardiology"), (15, "Wrote the grant draft")]
+        for (offset, text) in notes {
+            if let day = cal.date(byAdding: .day, value: -offset, to: today) { context.insert(DayNote(day: day, text: text)) }
         }
         try? context.save()
     }
