@@ -2,7 +2,7 @@
 
 A cozy little focus timer for iPhone, starring a brown kitty who studies and focuses with you.
 
-<img src="docs/images/demo.gif" width="300" alt="Winding the clock while the kitty watches, then petting her">
+<img src="docs/images/demo.gif" width="300" alt="Petting the kitty, winding the clock to 50 minutes, then starting focus as it counts down from 49:59">
 
 <p>
   <img src="docs/images/main.png" width="190" alt="Focusing: the kitty reads at her desk inside the timer ring">
